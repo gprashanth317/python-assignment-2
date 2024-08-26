@@ -1,0 +1,7 @@
+S = "ghee"
+result = ""
+for char in S:
+    frequency = S.count(char)
+    new = chr((ord(char) - ord('a') + frequency) % 26 + ord('a'))
+    result =result+ new
+print(result)
